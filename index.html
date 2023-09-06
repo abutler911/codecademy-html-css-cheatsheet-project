@@ -20,6 +20,11 @@
           <th>Selector Type</th>
           <th>Selector Syntax</th>
           <th>What It Does</th>
+          <th>
+            Specificity <br /><span class="explanation">
+              ID-Class-Tag-Pseudo</span
+            >
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -27,75 +32,79 @@
           <td>Universal Selector</td>
           <td>*</td>
           <td>Selects all elements.</td>
+          <td>0-0-0-0</td>
         </tr>
-
         <tr>
           <td>Class</td>
           <td>.classname</td>
           <td>Selects all elements with the given class name.</td>
+          <td>0-1-0-0</td>
         </tr>
-
         <tr>
           <td>ID</td>
           <td>#idname</td>
-          <td>Selects the element with the given id.</td>
+          <td>Selects the element with the given ID.</td>
+          <td>1-0-0-0</td>
         </tr>
-
         <tr>
           <td>Attribute Selector</td>
           <td>[attribute]</td>
           <td>Selects all elements with the specified attribute.</td>
+          <td>0-1-0-0</td>
         </tr>
-
         <tr>
           <td>Attribute Value Selector</td>
           <td>[attribute="value"]</td>
           <td>Selects all elements with the specified attribute and value.</td>
+          <td>0-1-0-0</td>
         </tr>
-
         <tr>
           <td>Child Selector</td>
           <td>parent > child</td>
           <td>Selects all direct child elements of the parent.</td>
+          <td>0-0-2-0</td>
         </tr>
-
         <tr>
           <td>Descendant Selector</td>
           <td>ancestor descendant</td>
           <td>Selects all descendants of the ancestor element.</td>
+          <td>0-0-2-0</td>
         </tr>
-
         <tr>
           <td>Adjacent Sibling Selector</td>
           <td>element1 + element2</td>
           <td>Selects all siblings that share the same parent.</td>
+          <td>0-0-2-0</td>
         </tr>
-
         <tr>
           <td>Pseudo-class Selector</td>
           <td>::pseudo-element</td>
           <td>Styles parts of elements, like ::before or ::after.</td>
+          <td>0-0-0-1</td>
         </tr>
-
         <tr>
           <td>Negation Pseudo-class</td>
           <td>:not(selector)</td>
           <td>Selects all elements that do not match the given selector.</td>
+          <td>0-1-0-0</td>
         </tr>
         <tr>
           <td>First Child Pseudo-class</td>
           <td>:first-child</td>
           <td>Selects the first child element of its parent.</td>
+          <td>0-1-0-0</td>
         </tr>
         <tr>
           <td>Last Child Pseudo-class</td>
           <td>:last-child</td>
           <td>Selects the last child element of its parent.</td>
+          <td>0-1-0-0</td>
         </tr>
         <tr>
           <td>Nth-child Pseudo-class</td>
           <td>:nth-child(n)</td>
           <td>Selects the nth child element of its parent.</td>
+          <td>0-1-0-0</td>
         </tr>
       </tbody>
     </table>

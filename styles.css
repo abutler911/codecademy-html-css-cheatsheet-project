@@ -11,6 +11,9 @@ h1 {
   padding: 10px;
 }
 
+.explanation {
+  font-size: 12px;
+}
 #cssTable {
   width: 100%;
   border-collapse: collapse;
@@ -42,15 +45,18 @@ h1 {
 
 @media screen and (max-width: 768px) {
   #cssTable {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #cssTable th,
   #cssTable td {
-    padding: 8px 10px;
+    padding: 5px 8px;
   }
 
   h1 {
     font-size: 1em;
+  }
+  .explanation {
+    font-size: 9px;
   }
 }
